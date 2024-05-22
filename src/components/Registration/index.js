@@ -75,35 +75,35 @@ function Registration()
     
     function submitForm()
     {
-        // if(navi) return
+        if(navi) return
 
-        // if(status3) return
+        if(status3) return
 
-        // if(status2) return
+        if(status2) return
 
-        // if(status) return 
+        if(status) return 
 
      
-        // console.log(status)
+        console.log(status)
        
-        //             const data={name,email,contact,message}
-        //             console.log(name,email,contact,message)
+                    const data={name,email,contact,message}
+                    console.log(name,email,contact,message)
             
-        //             fetch("https://lemonapp-jbdd.onrender.com/", {
-        //                 method : "POST" ,
-        //                 headers: {
-        //                     "Accept" : "application/json",
-        //                     "Content-Type" : "application/json"
-        //                 },
-        //                 body : JSON.stringify(data)
-        //             }).then((result)=>{
-        //                 result.json().then((data1)=>{
-        //                     console.log(data1)
+                    fetch("https://lemonapp-jbdd.onrender.com/", {
+                        method : "POST" ,
+                        headers: {
+                            "Accept" : "application/json",
+                            "Content-Type" : "application/json"
+                        },
+                        body : JSON.stringify(data)
+                    }).then((result)=>{
+                        result.json().then((data1)=>{
+                            console.log(data1)
                            
-        //                 })
-        //             })  
+                        })
+                    })  
                   
-        //                 navigate("/confirmation")
+                        navigate("/confirmation")
                     
     }
 
@@ -125,23 +125,19 @@ function Registration()
 
                    
                      <div className={styles.inputdiv}>
-                        <input type = "text" placeholder = "Full Name"  onBlur={validate3} onChange={(e)=> setName(e.target.value)}  className = {`${styles.abc} ${status3?styles.contacterror:''}`}/><br></br>
-                        {status3 && <p className= {styles.invalid3}> Name is Empty . </p>}  
+                        <input type = "text" placeholder = "Full Name"  onBlur={validate3} onChange={(e)=> setName(e.target.value)}  /><br></br>
+                        {status3 && <p > Name is Empty . </p>}  
 
-                        {/* <input type="text" placeholder="Email" id="email"  onBlur={validate2} onChange={(e)=> setEmail(e.target.value)} className = {`${styles.abc} ${status2?styles.contacterror:''}`}/><br></br>
+                        <input type="text" placeholder="Email" id="email"  onBlur={validate2} onChange={(e)=> setEmail(e.target.value)} /><br></br>
 
-                        {status2 && <p className= {styles.invalid2}> Email is invalid . </p>}   */}
+                        {status2 && <p > Email is invalid . </p>}  
 
-                        {/* <input type="number" placeholder="Contact No." id="mob" onBlur={validate}  onChange={(e)=> setContact(1*e.target.value)} className = {`${styles.abc} ${status?styles.contacterror:''}`}  /><br></br>
+                        <input type="number" placeholder="Contact No." id="mob" onBlur={validate}  onChange={(e)=> setContact(1*e.target.value)}  /><br></br>
 
-                        {status && <p className= {styles.invalid}> Contact is invalid . </p>}   */}
+                        {status && <p > Contact is invalid . </p>}  
 
                         <textarea type="text" placeholder="Message" id="msg"  onChange={(e)=> setMessage(e.target.value)}  /> <br></br>
-                        
-                        <input type = "text" placeholder = "Message" />
-                        
-                        <p> Hello World</p>
-
+            
                         </div>
 
                         <div className={styles.submitshift}>

@@ -66,3 +66,19 @@ opacity: 0px;
     font-size: 32px;
     
 }
+
+.submitdiv{
+
+    width: 252px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4.5px;
+    border-radius: 8px ;
+    background-color: #E75553;
+
+    color: #FFFFFF;
+    border: none ;
+    font-size: 24px;
+}

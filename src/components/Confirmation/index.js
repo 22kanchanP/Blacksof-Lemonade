@@ -18,7 +18,7 @@ function Confirmation()
                 <p> You have been added on the waiting list</p>
                 
                 <Link to = "/listing">
-                <button   className= {styles.buttondiv}> Done   </button>
+                <button   className={styles.submitdiv} > Done   </button>
                 </Link>
           
             </div>

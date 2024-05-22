@@ -8,7 +8,7 @@ function Listing()
     const [data1,setData]=useState([])
     useEffect(()=>
     {
-    fetch("http://localhost:5000/").then((result)=>{
+    fetch("https://lemonapp-jbdd.onrender.com/").then((result)=>{
     // console.log(result)
     result.json().then((data)=>
     {

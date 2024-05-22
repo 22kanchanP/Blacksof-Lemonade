@@ -89,7 +89,7 @@ function Registration()
                     const data={name,email,contact,message}
                     console.log(name,email,contact,message)
             
-                    fetch("http://localhost:5000/", {
+                    fetch("https://lemonapp-jbdd.onrender.com/", {
                         method : "POST" ,
                         headers: {
                             "Accept" : "application/json",

@@ -19,7 +19,7 @@ function HeroSection()
                                         <div className= {styles.topdiv}>
                                             <h1> They say, when life gives you 
                                                 </h1>
-                                                <h1>lemons,make lemonade ! </h1>
+                                                <h1>lemons,make lemonade !!!</h1>
                                         </div>
                                         <div className= {styles.middlediv}>
                                             <p>But your lemonade might taste different from others</p>

@@ -22,88 +22,88 @@ function Registration()
     
     function validate3()
     {
-        setNavi(false)
-        //  const pattern3 = new RegExp(/^([a-z A-Z ]+) ([a-z A-Z ]+) ([a-z A-Z]+)$/);
+        // setNavi(false)
+        // //  const pattern3 = new RegExp(/^([a-z A-Z ]+) ([a-z A-Z ]+) ([a-z A-Z]+)$/);
 
-         if(name !== "")
-            {
-                setStatus3(false)
-                console.log("correct NAme")  
-            }
-            else{
-                setStatus3(true)
-                console.log("wrong Name")
-            }
+        //  if(name !== "")
+        //     {
+        //         setStatus3(false)
+        //         console.log("correct NAme")  
+        //     }
+        //     else{
+        //         setStatus3(true)
+        //         console.log("wrong Name")
+        //     }
 
     }
 
 
     function validate2()
     {
-        setNavi(false)
-         const pattern2 = new RegExp(/^([a-z A-Z 0-9\._]+)@([a-z A-Z 0-9]+).([a-z]{2,8})(.[a-z]{2,8})$/);
+        // setNavi(false)
+        //  const pattern2 = new RegExp(/^([a-z A-Z 0-9\._]+)@([a-z A-Z 0-9]+).([a-z]{2,8})(.[a-z]{2,8})$/);
 
-         if(pattern2.test(email))
-            {
-                setStatus2(false)
-                console.log("correct Email")  
-            }
-            else{
-                setStatus2(true)
-                console.log("wrong Email")
-            }
+        //  if(pattern2.test(email))
+        //     {
+        //         setStatus2(false)
+        //         console.log("correct Email")  
+        //     }
+        //     else{
+        //         setStatus2(true)
+        //         console.log("wrong Email")
+        //     }
 
     }
 
     function validate()
     {
-        setNavi(false)
-        const pattern = new RegExp(/^[6-9]\d{9}$/);
+        // setNavi(false)
+        // const pattern = new RegExp(/^[6-9]\d{9}$/);
         
 
-             if(pattern.test(contact))
-                {
-                    setStatus(false)
-                    console.log("correct number")  
-                }
-                else{
-                    setStatus(true)
-                    console.log("wrong No.")
-                }
+        //      if(pattern.test(contact))
+        //         {
+        //             setStatus(false)
+        //             console.log("correct number")  
+        //         }
+        //         else{
+        //             setStatus(true)
+        //             console.log("wrong No.")
+        //         }
       }
 
     
     function submitForm()
     {
-        if(navi) return
+        // if(navi) return
 
-        if(status3) return
+        // if(status3) return
 
-        if(status2) return
+        // if(status2) return
 
-        if(status) return 
+        // if(status) return 
 
      
-        console.log(status)
+        // console.log(status)
        
-                    const data={name,email,contact,message}
-                    console.log(name,email,contact,message)
+        //             const data={name,email,contact,message}
+        //             console.log(name,email,contact,message)
             
-                    fetch("https://lemonapp-jbdd.onrender.com/", {
-                        method : "POST" ,
-                        headers: {
-                            "Accept" : "application/json",
-                            "Content-Type" : "application/json"
-                        },
-                        body : JSON.stringify(data)
-                    }).then((result)=>{
-                        result.json().then((data1)=>{
-                            console.log(data1)
+        //             fetch("https://lemonapp-jbdd.onrender.com/", {
+        //                 method : "POST" ,
+        //                 headers: {
+        //                     "Accept" : "application/json",
+        //                     "Content-Type" : "application/json"
+        //                 },
+        //                 body : JSON.stringify(data)
+        //             }).then((result)=>{
+        //                 result.json().then((data1)=>{
+        //                     console.log(data1)
                            
-                        })
-                    })  
+        //                 })
+        //             })  
                   
-                        navigate("/confirmation")
+        //                 navigate("/confirmation")
                     
     }
 

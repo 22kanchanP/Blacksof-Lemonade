@@ -43,6 +43,7 @@ opacity: 0px;
 
 .buttondiv{
     width: 229.36px;
+    height: 54px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,7 +53,7 @@ opacity: 0px;
     color: #FFFFFF;
     border: none ;
     text-decoration: none;
-    padding: 10px;
+    
     font-size: 18px;
 }
 

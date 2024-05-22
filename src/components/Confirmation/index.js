@@ -12,10 +12,10 @@ function Confirmation()
         <div className= {styles.wrapper}>
             <div className= {styles.innerwrapper}>
 
-               <img src = {Images.Image12} className={styles.congratsBox} alt = "No image"/> 
+               <img src = {Images.Image12}  alt = "No image"/> 
 
-                <h1 className= {styles.headingdiv}> Congratulations !</h1>
-                <p className= {styles.textdiv}> You have been added on the waiting list</p>
+                <h1 > Congratulations !</h1>
+                <p> You have been added on the waiting list</p>
                 
                 <Link to = "/listing">
                 <button   className= {styles.buttondiv}> Done   </button>

@@ -136,9 +136,9 @@ function Registration()
 
                         {status && <p className= {styles.invalid}> Contact is invalid . </p>}   */}
 
-                        <textarea type="text" placeholder="Message" id="msg"  onChange={(e)=> setMessage(e.target.value)}  className ={styles.msgdiv}/>
+                        <textarea type="text" placeholder="Message" id="msg"  onChange={(e)=> setMessage(e.target.value)}  /> <br></br>
                         
-                        <input type = "text" placeholder = "Message" />
+                        <input type = "text" placeholder = "Message"className ={styles.msgdiv} />
                         
                         <p> Hello World</p>
 

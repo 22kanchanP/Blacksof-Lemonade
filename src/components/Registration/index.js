@@ -125,8 +125,8 @@ function Registration()
 
                    
                      <div className={styles.inputdiv}>
-                        {/* <input type = "text" placeholder = "Full Name"  onBlur={validate3} onChange={(e)=> setName(e.target.value)}  className = {`${styles.abc} ${status3?styles.contacterror:''}`}/><br></br>
-                        {status3 && <p className= {styles.invalid3}> Name is Empty . </p>}   */}
+                        <input type = "text" placeholder = "Full Name"  onBlur={validate3} onChange={(e)=> setName(e.target.value)}  className = {`${styles.abc} ${status3?styles.contacterror:''}`}/><br></br>
+                        {status3 && <p className= {styles.invalid3}> Name is Empty . </p>}  
 
                         {/* <input type="text" placeholder="Email" id="email"  onBlur={validate2} onChange={(e)=> setEmail(e.target.value)} className = {`${styles.abc} ${status2?styles.contacterror:''}`}/><br></br>
 
@@ -138,7 +138,7 @@ function Registration()
 
                         <textarea type="text" placeholder="Message" id="msg"  onChange={(e)=> setMessage(e.target.value)}  /> <br></br>
                         
-                        <input type = "text" placeholder = "Message"className ={styles.msgdiv} />
+                        <input type = "text" placeholder = "Message" />
                         
                         <p> Hello World</p>
 

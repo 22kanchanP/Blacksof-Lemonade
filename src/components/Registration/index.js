@@ -22,54 +22,54 @@ function Registration()
     
     function validate3()
     {
-        // setNavi(false)
-        // //  const pattern3 = new RegExp(/^([a-z A-Z ]+) ([a-z A-Z ]+) ([a-z A-Z]+)$/);
+        setNavi(false)
+        //  const pattern3 = new RegExp(/^([a-z A-Z ]+) ([a-z A-Z ]+) ([a-z A-Z]+)$/);
 
-        //  if(name !== "")
-        //     {
-        //         setStatus3(false)
-        //         console.log("correct NAme")  
-        //     }
-        //     else{
-        //         setStatus3(true)
-        //         console.log("wrong Name")
-        //     }
+         if(name !== "")
+            {
+                setStatus3(false)
+                console.log("correct NAme")  
+            }
+            else{
+                setStatus3(true)
+                console.log("wrong Name")
+            }
 
     }
 
 
     function validate2()
     {
-        // setNavi(false)
-        //  const pattern2 = new RegExp(/^([a-z A-Z 0-9\._]+)@([a-z A-Z 0-9]+).([a-z]{2,8})(.[a-z]{2,8})$/);
+        setNavi(false)
+         const pattern2 = new RegExp(/^([a-z A-Z 0-9\._]+)@([a-z A-Z 0-9]+).([a-z]{2,8})(.[a-z]{2,8})$/);
 
-        //  if(pattern2.test(email))
-        //     {
-        //         setStatus2(false)
-        //         console.log("correct Email")  
-        //     }
-        //     else{
-        //         setStatus2(true)
-        //         console.log("wrong Email")
-        //     }
+         if(pattern2.test(email))
+            {
+                setStatus2(false)
+                console.log("correct Email")  
+            }
+            else{
+                setStatus2(true)
+                console.log("wrong Email")
+            }
 
     }
 
     function validate()
     {
-        // setNavi(false)
-        // const pattern = new RegExp(/^[6-9]\d{9}$/);
+        setNavi(false)
+        const pattern = new RegExp(/^[6-9]\d{9}$/);
         
 
-        //      if(pattern.test(contact))
-        //         {
-        //             setStatus(false)
-        //             console.log("correct number")  
-        //         }
-        //         else{
-        //             setStatus(true)
-        //             console.log("wrong No.")
-        //         }
+             if(pattern.test(contact))
+                {
+                    setStatus(false)
+                    console.log("correct number")  
+                }
+                else{
+                    setStatus(true)
+                    console.log("wrong No.")
+                }
       }
 
     
@@ -136,7 +136,7 @@ function Registration()
 
                         {status && <p className= {styles.invalid}> Contact is invalid . </p>}   */}
 
-                        {/* <textarea type="text" placeholder="Message" id="msg"  onChange={(e)=> setMessage(e.target.value)}  className ={styles.msgdiv}/><br></br> */}
+                        <textarea type="text" placeholder="Message" id="msg"  onChange={(e)=> setMessage(e.target.value)}  className ={styles.msgdiv}/><br></br>
                         <p> Hello World</p>
 
                         </div>

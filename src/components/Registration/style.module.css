@@ -27,21 +27,14 @@ height: 66.69px;
 top: -7.83px;
 left: -7.83px;
 gap: 0px;
-opacity: 0px;
+
 display: flex;
 align-items: center;
 justify-content: center;
 
 }
 
-.trophyImage{
-    width: 120px;
-    height: 100px;
-    /* top: 10.2px;
-    left: 4.29px; */
-    gap: 0px;
-    opacity: 0px;
-}
+
 
 .inputField{
   

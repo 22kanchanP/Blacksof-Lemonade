@@ -125,14 +125,14 @@ function Registration()
 
                    
                      <div className={styles.inputdiv}>
-                        <input type = "text" placeholder = "Full Name"  onBlur={validate3} onChange={(e)=> setName(e.target.value)}  /><br></br>
+                        <input type = "text" placeholder = "Full Name"  onBlur={validate3} onChange={(e)=> setName(e.target.value)}  className = {`${styles.abc} ${status3?styles.contacterror:''}`}/><br></br>
                         {status3 && <p > Name is Empty . </p>}  
 
-                        <input type="text" placeholder="Email" id="email"  onBlur={validate2} onChange={(e)=> setEmail(e.target.value)} /><br></br>
+                        <input type="text" placeholder="Email" id="email"  onBlur={validate2} onChange={(e)=> setEmail(e.target.value)} className = {`${styles.abc} ${status2?styles.contacterror:''}`}/><br></br>
 
                         {status2 && <p > Email is invalid . </p>}  
 
-                        <input type="number" placeholder="Contact No." id="mob" onBlur={validate}  onChange={(e)=> setContact(1*e.target.value)}  /><br></br>
+                        <input type="number" placeholder="Contact No." id="mob" onBlur={validate}  onChange={(e)=> setContact(1*e.target.value)} className = {`${styles.abc} ${status?styles.contacterror:''}`} /><br></br>
 
                         {status && <p > Contact is invalid . </p>}  
 

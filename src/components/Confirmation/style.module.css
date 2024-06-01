@@ -19,7 +19,7 @@
         top: 176.62px;
         left: 402.15px;
         gap: 0px;
-        opacity: 0px;
+       
 
         display : flex;
         flex-direction: column;
@@ -37,7 +37,7 @@ height: 225.37px;
 top: 26.01px;
 left: 197.02px;
 gap: 0px;
-opacity: 0px;
+
 
 }
 
@@ -67,18 +67,3 @@ opacity: 0px;
     
 }
 
-.submitdiv{
-
-    width: 252px;
-    height: 54px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 4.5px;
-    border-radius: 8px ;
-    background-color: #E75553;
-
-    color: #FFFFFF;
-    border: none ;
-    font-size: 24px;
-}

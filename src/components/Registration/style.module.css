@@ -34,6 +34,15 @@ justify-content: center;
 
 }
 
+.trophyImage{
+    width: 120px;
+    height: 100px;
+    /* top: 10.2px;
+    left: 4.29px; */
+    gap: 0px;
+   
+}
+
 
 
 .inputField{
@@ -102,7 +111,7 @@ justify-content: center;
 .invalid{
     color : #B90000;
     position: absolute;
-    right : 692px;
+    right : 525px;
     top : 463px;
     border-radius: 9px;
     padding: 15px;
@@ -114,7 +123,7 @@ justify-content: center;
 
     color : #B90000;
     position: absolute;
-    right : 692px;
+    right : 525px;
     top : 375px;
     border-radius: 9px;
     padding: 15px;
@@ -127,7 +136,7 @@ justify-content: center;
 
     color : #B90000;
     position: absolute;
-    right : 692px;
+    right : 525px;
     top : 285px;
     border-radius: 9px;
     padding: 15px;
